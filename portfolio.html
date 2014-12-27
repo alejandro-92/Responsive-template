@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Portfolio</title>
+	<meta name="description" content="Responsive template"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/> 
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/> 
+    <link rel="author" type="text/plain" href="humans.txt"/> 
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml"/>
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/styles.css">
+	<!-- FancyBox Styles-->
+	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css?v=2.1.5" media="screen" />
+	<!-- Modernizr -->
+	<script src="js/modernizr.js"></script>
+</head>
+<body>
+	<header>
+		<div id="profile">
+			<figure>
+				<img src="img/pp.jpg" alt="Foto de perfil" class="rounded" id="pp">
+				<figcaption>Lorem ipsum</figcaption>
+			</figure>
+		</div>
+	</header>
+	<nav>
+		<ul>
+			<a href="index.html"><li>Home</li></a>
+			<a href="about.html"><li>About</li></a>
+			<a href="contact.html"><li>Contact</li></a>
+			<a href="services.html"><li>Services</li></a>
+		</ul>
+	</nav>
+	<section id="development-img">
+		<img src="img/development-img.png" alt="development-img" />
+	</section>
+	<section id="portfolio-container">
+		<h1 class="center">Portfolio</h1>
+		<section id="portfolio">
+			<article id="job1">
+				<figure>
+					<a id="fancybox-effects-d" href="img/job1-b.png" title="Job #1"><img src="img/job1-s.png" class="shadow" alt="Job #1" /></a>
+					<figcaption class="flex-caption">Job #1</figcaption>
+				</figure>
+			</article>
+			<article id="job2">
+				<figure>
+					<a id="fancybox-effects-d" href="img/job2-b.png" title="Job #2"><img src="img/job2-s.png" class="shadow" alt="Job #2" /></a>
+					<figcaption class="flex-caption">Job #2</figcaption>
+				</figure>
+			</article>
+			<article id="job3">
+				<figure>
+					<a id="fancybox-effects-d" href="img/job3-b.png" title="Job #3"><img src="img/job3-s.png" class="shadow" alt="Job #3" /></a>
+					<figcaption class="flex-caption">Job #3</figcaption>
+				</figure>
+			</article>
+			<article id="job4">
+				<figure>
+					<a id="fancybox-effects-d" href="img/job4-b.png" title="Job #4"><img src="img/job4-s.png" class="shadow" alt="Job #4" /></a>
+					<figcaption class="flex-caption">Job #4</figcaption>
+				</figure>
+			</article>
+			<article id="job5">
+				<figure>
+					<a id="fancybox-effects-d" href="img/job5-b.png" title="Job #5"><img src="img/job5-s.png" class="shadow" alt="Job #5" /></a>
+					<figcaption class="flex-caption">Job #5</figcaption>
+				</figure>
+			</article>
+			<article id="job6">
+				<figure>
+					<a id="fancybox-effects-d" href="img/job6-b.png" title="Job #6"><img src="img/job6-s.png" class="shadow" alt="Job #6" /></a>
+					<figcaption class="flex-caption">Job #6</figcaption>
+				</figure>
+			</article>
+		</section>
+	</section>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script>
+		!window.jquery || document.write("<script src='js/jquery.min.js'><\/script>");
+	</script>
+	<script type="text/javascript" src="js/jquery.fancybox.js?v=2.1.5"></script>
+	<script src="js/holder.js"></script> <!-- Imagenes prefabricadas -->
+	<script>
+        $("#fancybox-effects-d").fancybox({
+				padding: 0,
+
+				openEffect : 'elastic',
+				openSpeed  : 150,
+
+				closeEffect : 'elastic',
+				closeSpeed  : 150,
+
+				closeClick : true,
+
+				helpers : {
+					overlay : null
+				}
+			});
+    </script>
+</body>
+<footer>
+	<p id="developer">Developed by: <a href="https://twitter.com/Manuel101192" rel="author" target=_blank>@Manuel101192</a></p>
+</footer>
+
+</html>

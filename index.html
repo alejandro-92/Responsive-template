@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Home</title>
+	<meta name="description" content="Responsive template"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/> 
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/> 
+    <link rel="author" type="text/plain" href="humans.txt"/> 
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml"/>
+	<!-- CSS -->
+    <link rel="stylesheet" href="css/flexslider.css"/>
+	<link rel="stylesheet" href="css/styles.css">
+	<!-- Modernizr -->
+	<script src="js/modernizr.js"></script>
+</head>
+<body>
+	<header>
+		<div id="profile">
+			<figure>
+				<img src="img/pp.jpg" alt="Foto de perfil" class="rounded" id="pp">
+				<figcaption>Lorem ipsum</figcaption>
+			</figure>
+		</div>
+	</header>
+	<nav>
+		<ul>
+			<a href="about.html"><li>About</li></a>
+			<a href="portfolio.html"><li>Portfolio</li></a>
+			<a href="contact.html"><li>Contact</li></a>
+			<a href="services.html"><li>Services</li></a>
+		</ul>
+	</nav>
+	<section id="container">
+		<div class="flexslider">
+           	<ul class="slides">
+           		<li>
+                   	<img src="holder.js/600x320" class="rounded-corners" title="Image #1"/>
+                   	<p class="flex-caption">Image No. 1</p>
+               	</li>
+               	<li>
+                   	<img src="holder.js/600x320" class="rounded-corners" title="Image #2"/>
+                   	<p class="flex-caption">Image No. 2</p>
+               	</li>
+               	<li>
+                   	<img src="holder.js/600x320" class="rounded-corners" title="Image #3"/>
+					<p class="flex-caption">Image No. 3</p>
+               	</li>
+               	<li>
+                   	<img src="holder.js/600x320" class="rounded-corners" title="Image #4"/>
+                   	<p class="flex-caption">Image No. 4</p>
+               	</li>
+				<li>
+                   	<img src="holder.js/600x320" class="rounded-corners" title="Image #4"/>
+                   	<p class="flex-caption">Image No. 5</p>
+               	</li>
+           	</ul>
+       	</div>
+	</section>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="js/jquery.flexslider-min.js"></script>
+	<script src="js/holder.js"></script> <!-- Imagenes prefabricadas -->
+	<script>
+		!window.jQuery && document.write("<script src='js/jquery.min.js'><\/script>");
+	</script>
+	<script>
+        $(window).on("load",function(){
+            $('.flexslider').flexslider();
+        });
+    </script>
+</body>
+<footer>
+	<section id="developer">
+		Developed by: <a href="https://twitter.com/Manuel101192" rel="author" target="_blank">@Manuel101192</a>
+	</section>
+	<section id="update-date">
+		Last update: **/**/**
+	</section>
+</footer>
+
+</html>
