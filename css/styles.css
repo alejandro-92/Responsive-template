@@ -35,6 +35,11 @@ header{
 	background: url(../img/header-background.jpg);
 }
 
+hgroup{
+	margin-bottom: .5em;
+	padding: .2em;
+}
+
 hr{
 	border: solid .1em #fff;
 }
@@ -88,6 +93,10 @@ legend{
 	padding: 0 .2em 0 .2em;
 }
 
+li{
+	list-style: none;
+}
+
 nav li{
 	background-color: rgb(99, 173, 219);
 	border-radius: .2em;
@@ -139,17 +148,6 @@ textarea{
 	box-shadow: 0 0 20px rgba(0,0,0,.6);
 }
 
-aside#social-networks{
-	max-width: 100%;
-	padding: .5em;
-	width: 32%;
-}
-
-aside#social-networks,section#email-form{
-	display: inline-block;
-	vertical-align: top;
-}
-
 article#author-social-networks{
 	border-bottom: .2em solid #FFF;
 	max-width: 100%;
@@ -190,6 +188,17 @@ article#skill1,article#skill2,article#skill3,article#skill4,article#skill5{
 	max-width: 100%;
 }
 
+aside#social-networks{
+	max-width: 100%;
+	padding: .5em;
+	width: 32%;
+}
+
+aside#social-networks,section#email-form{
+	display: inline-block;
+	vertical-align: top;
+}
+
 div#profile{
 	margin: 0 auto;
 	max-width: 100%;
@@ -199,8 +208,47 @@ div#profile{
 	width: 20%;
 }
 
+h1#mobile_dev{
+	color: #89B72C;
+}
+
+h1#software_dev{
+	color: #F05032;
+}
+
+h1#web_dev{
+	color: #00ABF1;
+}
+
 img#facebook:hover,img#pinterest:hover,img#twitter:hover,img#youtube:hover,img#instagram:hover,img#github:hover,img#gplus:hover,img#linkedin:hover{ /*trabajar aqui*/
 	opacity: .7;
+}
+
+li#button_1,li#button_2,li#button_3{
+	border: .15em solid #FFF;
+	color: #FFF;
+	font-size: 1.1em;
+	font-style: italic;
+	font-weight: bold;
+	margin-bottom: .5em;
+	margin-top: 2.5em;
+	max-width: 100%;
+	padding: .15em;
+}
+
+li#button_1:hover{
+	background-color: #00ABF1;
+	color: #FFF;
+}
+
+li#button_2:hover{
+	background-color: #F05032;
+	color: #FFF;
+}
+
+li#button_3:hover{
+	background-color: #89B72C;
+	color: #FFF;
 }
 
 p#developer{
@@ -217,6 +265,12 @@ p#follow-me,p#map{
 	text-align: center;
 }
 
+p#list_description{
+	font-style: arial;
+	font-weight: bold;
+	text-align: justify;
+	margin-bottom: .5em;
+}
 
 section#about{
 	background-color: rgba(255,255,255,.5);
@@ -228,13 +282,6 @@ section#about{
 	max-width: 100%;
 	padding: .5em;
 	width: 70%;
-}
-
-section#email-form{
-	max-width: 100%;
-	margin: 0 auto;
-	padding: 1em;
-	width: 60%;
 }
 
 section#columns{
@@ -279,6 +326,26 @@ section#development-img{
 	width: 25%;
 }
 
+section#email-form{
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 1em;
+	width: 60%;
+}
+
+section#service_one,section#service_two,section#service_three{
+	background-color: rgba(0,0,0,.6);
+	border-radius: .3em;
+	box-shadow: 0 0 1em rgba(0,0,0,.8);
+	color: rgba(255,255,255,.8);
+	display: inline-block;
+	margin: 0 .6em;
+	margin-top: 2.5em;
+	max-width: 100%;
+	padding: .5em;
+	width: 30%;
+}
+
 section#portfolio{
 	margin: 0 auto;
 	margin-top: 1em;
@@ -292,6 +359,18 @@ section#portfolio-container{
 	margin-bottom: 3em;
 	max-width: 100%;
 	width: 90%;
+}
+
+section#servers{
+
+}
+
+section#services{
+	margin: 2em auto;
+	max-width: 100%;
+	padding: .5em;
+	text-align: center;
+	width: 95%;
 }
 
 section#skills{
@@ -312,6 +391,11 @@ section#ubication{
 }
 
 /*---------------- Classes ----------------*/
+.button_service{
+	margin: 0 auto;
+	max-width: 100%;
+	width: 50%;
+}
 
 .center{
 	text-align: center;
@@ -405,13 +489,26 @@ section#ubication{
 	article#job5,article#job6{
 		margin: 1em;
 	}
+	section#service_one,section#service_two,section#service_three{
+		display: block;
+	}
+	section#service_one,section#service_two{
+		display: inline-block;
+		width: 40%;
+	}
+	section#service_three{
+		margin: 2em auto;
+		width: 85%;
+	}
 }
 
 @media only screen and (max-width: 640px){
 	article#column1,article#column2{
 		width: 45%;
 	}
-
+	section#service_three{
+		width: 86%;
+	}
 }
 
 @media only screen and (max-width: 480px){
@@ -434,11 +531,22 @@ section#ubication{
 	section#skills{
 		width: 95%;
 	}
+	section#service_one,section#service_two,section#service_three{
+		display: block;
+		margin: 1.5em auto;
+		width: 90%;
+	}
 }
 
 @media only screen and (max-width: 320px){
 	nav li{
 		margin-bottom: .4em;
-		width: 30%;
+		width: 35%;
+	}
+	li{
+		font-size: .5em;
+	}
+	.button_service{
+		width: 70%;
 	}
 }
